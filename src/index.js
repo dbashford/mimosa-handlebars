@@ -8,7 +8,7 @@ var fs = require( "fs" )
     logger = mimosaConfig.log;
     return mimosaConfig.handlebars.extensions;
   }
-  , regularBoilerplate = "if (!Handlebars) {\n  console.log(\"Handlebars library has not been passed in successfully\");\n  return;\n}\n\nvar template = Handlebars.template, templates = {};\nHandlebars.partials = templates;\n";
+  , regularBoilerplate = "if (!Handlebars) {\n  throw new Error(\"Handlebars library has not been passed in successfully\");\n}\n\nvar template = Handlebars.template, templates = {};\nHandlebars.partials = templates;\n";
 
 var prefix = function ( mimosaConfig, libraryPath ) {
 
