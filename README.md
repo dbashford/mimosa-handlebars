@@ -9,6 +9,8 @@ This module targets Handlebars without Ember. If you are using Handlebars with E
 
 For more information regarding Mimosa, see http://mimosa.io
 
+Note: version 2.0+ of this module supports Handlebars 2.0+.  Use version 1.3 of mimosa-handlebars if you need older versions.
+
 ## Usage
 
 Add `'handlebars'` to your list of modules.  That's all!  Mimosa will install the module for you when you start `mimosa watch` or `mimosa build`.
